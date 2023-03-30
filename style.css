@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  align-items: start;
+}
+
+.box {
+  display: inline-block;
+  color: #fff;
+  padding: 25px;
+  width: 30%;
+  border: 5px solid #fff;
+  min-height: 200px;
+}
+
+.fail-box {
+  background-color: darkred;
+}
+
+.success-box {
+  background-color: darkgreen;
+}
+
+.hidden {
+  display: none;
+}

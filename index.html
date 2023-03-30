@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>AdBlockerDetector</title>
+</head>
+
+<body>
+  <header>
+    <h1>AdBlockerDetector</h1>
+  </header>
+
+  <main>
+    <p>This page checks:</p>
+    <ul>      
+      <li>If your Browser allows PopUps or not.</li>
+      <li>If your Adblocker is active or not.</li>
+    </ul>
+    <p><strong>These restrictions can cause problems considering your downloads.</Strong></p>
+
+    <div class="wrapper">
+
+      <div class="box hidden fail-box" id="popup-not-allowed">
+        <h2>Popups are not allowed</h2>
+        <p>Please enter your browser settings, allow popups for this website and reload the page in order to start your
+          download!
+        </p>
+      </div>
+
+      <div class="box hidden success-box" id="popup-allowed">
+        <h2>Popups are allowed</h2>
+        <p>You've deactived your Popup-Blocker. You can start your download now!</p>
+      </div>
+
+      <div class="box hidden fail-box" id="adblocker-active">
+        <h2>AdBlocker is active</h2>
+        <p>Please deactive your AdBlocker and refresh this page in order to start your download!</p>
+      </div>
+
+      <div class="box hidden success-box" id="adblocker-not-active">
+        <h2>AdBlocker is deactived</h2>
+        <p>You've deactived your Adblocker. You can start your download now!</p>
+      </div>
+
+
+    </div>
+  </main>
+
+  <footer>
+    <script src="script.js"></script>
+  </footer>
+</body>
+
+</html>
